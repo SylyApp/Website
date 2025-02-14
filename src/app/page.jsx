@@ -77,7 +77,7 @@ function MainComponent() {
               muted
               playsInline
             >
-              <source src="example4.mp4" type="video/mp4" />
+              <source src="example5.mp4" type="video/mp4" />
             </video>
             <canvas ref={canvasRef} width="1" height="1" className="hidden" />
           </div>
