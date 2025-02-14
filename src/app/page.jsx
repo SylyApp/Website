@@ -48,9 +48,14 @@ function MainComponent() {
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >
-              <div className="bg-[#FFDF60] text-black font-inter px-8 py-4 rounded-full text-lg font-bold">
+              <a
+                href="https://getwaitlist.com/waitlist/19042"
+                className="bg-[#FFDF60] text-black font-inter px-8 py-4 rounded-full text-lg font-bold"
+                target="_blank" 
+                rel="noopener noreferrer" 
+              >
                 Click to Download
-              </div>
+              </a>
             </button>
           </div>
         </div>
@@ -91,9 +96,14 @@ function MainComponent() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div className="bg-[#FFDF60] text-black font-inter px-6 py-3 rounded-full text-base font-bold">
+            <a
+              href="https://getwaitlist.com/waitlist/19042"
+              className="bg-[#FFDF60] text-black font-inter px-6 py-3 rounded-full text-base font-bold"
+              target="_blank" 
+              rel="noopener noreferrer" 
+            >
               Click to Download
-            </div>
+            </a>
           </button>
         </div>
       </div>
@@ -101,14 +111,16 @@ function MainComponent() {
       <div className="w-full flex justify-end pb-4">
         <div className="flex gap-6">
           <a
-            href="/privacy"
+            href="https://judicious-price-84b.notion.site/dataatsyly"
             className="text-white/20 hover:text-white/40 text-sm transition-colors duration-300"
+            target="_blank" 
           >
             Privacy
           </a>
           <a
-            href="/legal"
+            href="https://judicious-price-84b.notion.site/syly-About-Site-483304a1b6ca4025810f907d0e83f3e3"
             className="text-white/20 hover:text-white/40 text-sm transition-colors duration-300"
+            target="_blank" 
           >
             Legal
           </a>
