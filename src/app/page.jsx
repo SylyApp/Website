@@ -11,16 +11,16 @@ function MainComponent() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    // Sicherstellen, dass PostHog nur im Browser initialisiert wird
-    if (typeof window !== "undefined") {
-      posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, { api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST});
-    }
-  }, []);
+  // useEffect(() => {
+  //   // Sicherstellen, dass PostHog nur im Browser initialisiert wird
+  //   if (typeof window !== "undefined") {
+  //     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, { api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST});
+  //   }
+  // }, []);
 
-  const handleClick = () => {
-    posthog.capture("click_to_download", { button: "Click to Download Button" }); // Event senden
-  };
+  //const handleClick = () => {
+  //  posthog.capture("click_to_download", { button: "Click to Download Button" }); // Event senden
+  //};
   useEffect(() => {
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -60,7 +60,7 @@ function MainComponent() {
               }`}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              onClick={handleClick} 
+              //onClick={handleClick} 
             >
               <a
                 href="https://getwaitlist.com/waitlist/19042"
@@ -109,7 +109,7 @@ function MainComponent() {
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={handleClick} 
+            //onClick={handleClick} 
           >
             <a
               href="https://getwaitlist.com/waitlist/19042"
