@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
 import { useState, useEffect, useRef } from "react";
+import posthog from "posthog-js";
+
+posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, { api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST, autocapture: false });
 
 function MainComponent() {
   const [isHovered, setIsHovered] = useState(false);
@@ -8,6 +11,9 @@ function MainComponent() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
+  const handleClick = () => {
+    posthog.capture("click_to_download", { button: "Click to Download Button" }); // Event senden
+  };
   useEffect(() => {
     const video = videoRef.current;
     const canvas = canvasRef.current;
@@ -47,6 +53,7 @@ function MainComponent() {
               }`}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
+              onClick={handleClick} 
             >
               <a
                 href="https://getwaitlist.com/waitlist/19042"
@@ -95,6 +102,7 @@ function MainComponent() {
             }`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            onClick={handleClick} 
           >
             <a
               href="https://getwaitlist.com/waitlist/19042"
