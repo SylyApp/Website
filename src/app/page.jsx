@@ -11,6 +11,13 @@ function MainComponent() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
+  useEffect(() => {
+    // Sicherstellen, dass PostHog nur im Browser initialisiert wird
+    if (typeof window !== "undefined") {
+      posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, { api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST, autocapture: false });
+    }
+  }, []);
+
   const handleClick = () => {
     posthog.capture("click_to_download", { button: "Click to Download Button" }); // Event senden
   };
