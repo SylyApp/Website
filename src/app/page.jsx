@@ -63,7 +63,7 @@ function MainComponent() {
               onClick={handleClick} 
             >
               <a
-                href="https://getwaitlist.com/waitlist/19042"
+                href="https://getwaitlist.com/waitlist/25243"
                 className="bg-[#FFDF60] text-black font-inter px-8 py-4 rounded-full text-lg font-bold"
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -112,7 +112,7 @@ function MainComponent() {
             onClick={handleClick} 
           >
             <a
-              href="https://getwaitlist.com/waitlist/19042"
+              href="https://getwaitlist.com/waitlist/25243"
               className="bg-[#FFDF60] text-black font-inter px-6 py-3 rounded-full text-base font-bold"
               target="_blank" 
               rel="noopener noreferrer" 
