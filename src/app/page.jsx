@@ -113,7 +113,7 @@ function MainComponent() {
           >
             <a
               href="https://getwaitlist.com/waitlist/25243"
-              className="bg-[#FFDF60] text-black font-inter px-10 py-5 rounded-full text-lg font-bold"
+              className="bg-[#FFDF60] text-black font-inter px-10 py-5 rounded-full text-xl font-bold"
               target="_blank" 
               rel="noopener noreferrer" 
             >
