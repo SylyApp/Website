@@ -47,10 +47,10 @@ function MainComponent() {
         <div className="order-1 md:w-1/2 flex flex-col items-center justify-center">
           <div className="text-center mb-8 md:mb-12">
             <h1 className="font-inter text-6xl md:text-[150px] text-white tracking-[-0.1em] lowercase font-black mb-4">
-              syly
+              SYLY
             </h1>
             <p className="text-white/80 text-lg md:text-xl font-inter text-center">
-              reactions 🤣 from friends 🙌 on memes
+              REACTIONS 🤣 FROM FRIENDS 🙌 ON MEMES
             </p>
           </div>
           <div className="hidden md:block">
@@ -68,7 +68,7 @@ function MainComponent() {
                 target="_blank" 
                 rel="noopener noreferrer" 
               >
-                Click to Download
+                CLICK TO DOWNLOAD
               </a>
             </button>
           </div>
@@ -117,7 +117,7 @@ function MainComponent() {
               target="_blank" 
               rel="noopener noreferrer" 
             >
-              Click to Download
+              CLICK TO DOWNLOAD
             </a>
           </button>
         </div>
