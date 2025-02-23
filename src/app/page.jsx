@@ -50,7 +50,7 @@ function MainComponent() {
               SYLY
             </h1>
             <p className="text-white/80 text-lg md:text-xl font-inter text-center">
-              REACTIONS 🤣 FROM FRIENDS 🙌 ON MEMES
+              reactions 🤣 from friends 🙌 on memes
             </p>
           </div>
           <div className="hidden md:block">
@@ -68,7 +68,7 @@ function MainComponent() {
                 target="_blank" 
                 rel="noopener noreferrer" 
               >
-                CLICK TO DOWNLOAD
+                Click to Download
               </a>
             </button>
           </div>
@@ -96,7 +96,7 @@ function MainComponent() {
               muted
               playsInline
             >
-              <source src="example.mp4" type="video/mp4" />
+              <source src="website_video.mp4" type="video/mp4" />
             </video>
             <canvas ref={canvasRef} width="1" height="1" className="hidden" />
           </div>
@@ -117,7 +117,7 @@ function MainComponent() {
               target="_blank" 
               rel="noopener noreferrer" 
             >
-              CLICK TO DOWNLOAD
+              Click to Download
             </a>
           </button>
         </div>
