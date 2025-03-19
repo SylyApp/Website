@@ -1,0 +1,688 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Privacy Policy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 16px;
+	background-color: #000;
+	color: white;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(255, 255, 255);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1b565d4c-e484-80bc-9306-cd2995f0316f" class="page sans"><header><h1 class="page-title">Privacy Policy</h1><p class="page-description"></p></header><div class="page-body"><p id="1b565d4c-e484-80db-9ce6-edaafd7324e4" class=""><em><strong>Last Updated: December 2024</strong></em></p><p id="d8f49fbc-f94d-4b22-a91e-966c5308e869" class="">If you are a minor, and are not sure you understand everything in this Policy, please make sure to speak with a trusted adult before using Syly. Please also remember that Syly is not meant to be used if you are under 13. If you are over 13 but under 16 years old, your parent or guardian must approve your use of the app.</p><p id="35d15e55-3a0d-4b96-abe7-75f9ff687cc1" class="">In this Privacy Policy, we will explain what information we collect about you, how we use it, when we share it, and the controls we provide you to manage the information you share with us.</p><h3 id="3f06b311-1620-469f-994f-42bc65e51db0" class="">1. Information we process about you</h3><p id="5e24da1e-d884-410b-bfbb-335fa00006e3" class="">Syly (the ‘<strong>App</strong>’) collects information that you provide directly to us, through your use of our App and your visit to our website or shared by third-parties.</p><h3 id="a4ac3165-9a84-49dd-87af-6e79d0429953" class="">1.1 Data that you provide to us</h3><p id="5899ef41-6ef7-44fd-a647-44ca6fc481bc" class=""><strong>Account Creation Data</strong>: when you create an account on our App, we will ask you for the following information. Without it, we cannot provide you access to the App:</p><p id="bbd62881-e619-4f10-8960-d18a1098267c" class="">●     Your phone number, full name, date of birth and username.</p><p id="a5cc3764-def1-428c-ba09-e9fe8d4334ca" class="">●     The email address of a parent or guardian, for users under 16 years old.</p><p id="17043586-4f3b-4371-94ce-6b697de82c01" class="">During (or after) account creation there is also some additional information you can decide to share with us:</p><p id="73ed14e7-f51c-4743-8407-e6c648b2c3da" class="">●     A biography, your location (as precise as you want), and a profile picture.</p><p id="66372f8e-715b-4523-98ec-6d0032a06227" class=""><strong>Content Data:</strong> when you use the App, you can decide to share the following data:</p><p id="72b53895-762e-4519-8670-81302258fa0b" class="">●     Photos and videos that you take (“<strong>Content</strong>”) using the app or photos that you share from your library. You can create an account without allowing us to access and collect data from your device’s camera or photo library. However, you will only be able to see your friends’ Content when you record your own reaction.  It’s a foundational part of how Syly works.</p><p id="f58ad9d8-5355-43dc-92e0-52d063c87ef7" class="">●     Your reaction to your friends’ Content: RealMojis, emojis, captions and comments.</p><p id="645017aa-0f53-41bc-b27b-e32beb3c6d86" class=""><strong>Chat Data:</strong> when you use the Sylys chat function, we collect the messages, photos and videos you share with your friends within the chat.</p><p id="0a36763c-6cbf-4b1b-a9a6-dbf40607c98d" class=""><strong>Communications with Syly</strong>: When you report a concern with our App, respond to a survey, request assistance, we collect the following data:</p><p id="f77b0a6e-ac4f-4bb8-ae19-0bd4c6df8cb2" class="">●     Your email address,</p><p id="6bd50bd4-7016-4c45-814f-a05afe927962" class="">●     Content of communication with us,</p><p id="baafe846-082c-4942-b8d5-086642e8c0bf" class="">●     Photos you may decide to share with us,</p><p id="5e8a1e50-6b8f-4e4d-8c4e-414577361ba7" class="">●     Copies of government issued identification (only when strictly required to identify you with certainty),</p><p id="03ac6dac-4ef7-4af3-b892-16853538d9b9" class="">●     Identifiers (e.g., phone numbers or email address),</p><p id="26230aa6-d0de-4dff-b70e-6be707351c7f" class="">●   Any other information you may decide to share with us.</p><h3 id="186fd493-6b81-4722-b155-f2cffd4f7c5f" class="">1.2 Data we collect when you use our App or visit our website</h3><p id="e5f818c2-5cfe-4bfc-833d-b5df672c3c95" class="">Like all internet based services, as you use our App or visit our website, we automatically receive information about you from your device and your usage of our App and your visit of our website. Most information is collected through trackers:</p><p id="af33c99a-6b5c-4a59-9421-0a3d36c3433a" class="">a.       Through the use of our website:</p><p id="9ca075f3-b452-46d1-97bc-ff4bd45bf6a6" class=""><strong>Connection and Technical Data</strong> such as IP address, device type, operating system version, browser, language preference, and browsing data.</p><p id="9e70ce50-6dd4-4f8d-b98a-f880b301edfd" class="">b.       Through your use of the App:</p><p id="106e69e5-d80f-4e8c-8cff-06a6929ecec0" class=""><strong>Connection and Technical Data such as:</strong></p><p id="68b5c06c-c224-4846-b97d-6ea1cc7fd81e" class="">●     IP address, account creation date, last login, terminal equipment and port, operating system, system configuration data, device type, operating system version, browser, language preference, and applications.</p><p id="4bdcc882-a013-4835-a2e5-a75b6e17899b" class="">●     user_id (unique identifier generated at account creation), device_id (unique identifier generated when connecting on new device) and Amplitude ID.</p><p id="4670c717-4c06-4664-86da-f32d67eb87c0" class=""><strong>Interaction Data:</strong></p><p id="e7cbf1a6-3df6-4dc8-bdb5-7c2825e519e8" class="">●     Friend (number of friends, friend invitations, the friends with whom you interact the most).</p><p id="4b0d4a98-ae8a-4c12-bd15-cea8d41b2800" class=""><strong>Inferred information:</strong> We will analyse Account Creation Data and the Content Data to infer information about you:</p><p id="6676a9c1-7648-45c6-be9f-ac0a1dc8b092" class="">●     Your time zone.</p><p id="4e8cb22c-d369-42d4-8078-3e979ebde945" class="">●    Your interests.</p><p id="40e3e620-ce42-4063-87ba-6e1eb5e31f99" class=""><strong>Usage Data:</strong> actions performed on the App or our website, time of posting Content, how many times you retook a photo before posting, number of Syly posts, Content viewed, Content interactions, the fact that you deleted Content, or that you blocked users, when you take a screenshot in our App, application crashes, pages visited and event logs.</p><p id="dd6be955-e2d2-41a6-98cb-29c181949596" class=""><strong>Geolocation Data</strong>: when you use our app, we infer your country, city, region based on your IP address.</p><p id="1f80228f-1aac-40a0-bb18-268da28eb4d3" class=""><strong>Address Book Data</strong>: You can decide to allow Syly to access your address book to identify the friends in your Address Book who may already be on Syly. We do not access your Address Book without your permission. If you decide to find your friends by giving us access to your Address Book, we hash the phone numbers in your Address Book (we don’t look at anything else), securely send those hashed phone numbers to our systems, compare those hashed numbers to the list of hashed phone numbers for other Syly users, and return the username to you as a friend suggestion. Bear in mind that even if you don’t agree to share your Address Book with us, we can still make personalized friends’ suggestions to you based on your hashed phone number that we received from your friends who use our app (see below).</p><p id="dbf76280-aac6-4fc3-b425-2859b258e0bb" class=""><strong>Integrations with partners</strong>: -</p><h3 id="7d2460c0-c088-4216-aa94-b95973841e9d" class="">1.3 Information about you provided by third parties</h3><p id="5205989e-6872-4aaf-98f5-f2e28388168a" class="">We may receive information about you from other users of our app. For instance, if other users know you and choose to use contact importing, they may share your phone number with us, just as you may share theirs. Where friends of yours use contact importing, we may suggest you as a friend to them, and them as a friend to you.</p><p id="3b0e9623-3356-48ec-a178-a3b96562701e" class="">We will also receive the information about where you came from to download the App (for example, if you clicked on an ad on another social media) from our partners.</p><h3 id="95c25277-77c7-4ceb-b07e-ccf81c5a0050" class="">2. How we use information we receive about you</h3><table id="5e0e5e03-d9f7-4189-809b-b5ee61cb7bc5" class="simple-table"><tbody><tr id="c2563aaa-3b43-4801-b028-0e0a4ca4ffd5"><td id="|=il" class="">Why we Process your Data</td><td id="TWES" class="">What Personal Data is Processed</td><td id="=\@A" class="">Legal Ground for the Processing</td></tr><tr id="361d0304-28fc-42e1-86a5-e0b90ec57271"><td id="|=il" class="">So you can create and keep your account and so we can identify you when you log in</td><td id="TWES" class="">Account Creation Data</td><td id="=\@A" class="">Performance of the contract between You and Syly</td></tr><tr id="f02970ed-2296-4cf0-99f1-182c5c8b9667"><td id="|=il" class="">So you can publish, see and react to Content on the Syly App and use Syly’s chat</td><td id="TWES" class="">Content Data, Chat Data, Communications with Syly, Usage Data, Device and Equipment Data</td><td id="=\@A" class="">Performance of the contract between You and Syly</td></tr><tr id="4298551f-c1b2-4a6d-ae7f-e60c621554c3"><td id="|=il" class="">So we can determine your time Zone and inform you of the time to post your Content</td><td id="TWES" class="">Connection and Technical Data</td><td id="=\@A" class="">Our legitimate interests to provide you with our App (you can change your time zone at any time in the settings of the applications)</td></tr><tr id="4aca9c29-8d98-488f-8518-d50e01c93398"><td id="|=il" class="">So we can process your or other users’ requests, complaints and reports</td><td id="TWES" class="">Content Data, Communications with Syly</td><td id="=\@A" class="">Our legitimate interests to provide answers to users regarding our App or the Content displayed</td></tr><tr id="069468e4-d8d5-4591-bbaf-06ea73f2cad7"><td id="|=il" class="">So we can moderate Content in accordance with the law (prevention of illegal activities, fraud, cyber harassment, …) and our Terms of Use</td><td id="TWES" class="">Content Data, Usage Data, Communication Data</td><td id="=\@A" class="">Compliance with our legal obligations (i.e., required by law for Syly to keep this information in certain cases)</td></tr><tr id="66a23971-fe9e-406d-8a5b-091e4c244bad"><td id="|=il" class="">So we can suspend accounts or keep certain users from using the app after violation of applicable law or our Terms of Use</td><td id="TWES" class="">Account Creation Data, Interaction Data</td><td id="=\@A" class="">Our legitimate interest to provide a safe and secure environment to our users according to our Terms of Use</td></tr><tr id="8337dfb2-3d96-49cc-96c4-cd375814471d"><td id="|=il" class="">So we can connect you with your friends</td><td id="TWES" class="">Address Book Data, Interaction Data, Information provided to us by third parties, Interaction Data</td><td id="=\@A" class="">Consent, Our legitimate interest to use the limited data received from your friends to provide you with personalized friends’ suggestions and make your use of our app easier</td></tr><tr id="a282952a-69da-4000-809f-0696a3a58e50"><td id="|=il" class="">So we can communicate with you within the App. This can happen when we need to communicate with you about a feature of our App</td><td id="TWES" class="">Account Creation Data, Content Data</td><td id="=\@A" class="">Our legitimate interest to communicate with you</td></tr><tr id="7d8cfd0a-9dc3-476f-8503-914661a91a7e"><td id="|=il" class="">To make sure the app or the website is running smoothly for you</td><td id="TWES" class="">Navigation data, Interaction Data</td><td id="=\@A" class="">Our legitimate interest to provide a working App or website to you</td></tr><tr id="1a88e992-0acc-4772-a8e2-65bc53643b75"><td id="|=il" class="">So we can identify you to your account when you have lost access</td><td id="TWES" class="">Communications with Syly</td><td id="=\@A" class="">Our legitimate interest to let you back on the App</td></tr><tr id="73f7b882-0d5e-4c19-86ee-7fd07ed85acd"><td id="|=il" class="">So we can infer preferences and interest of our users</td><td id="TWES" class="">Account Creation Data, Content Data, Connection and Technical Data, Interaction Data, Device and Equipment Data, Mobile advertising IDs and device identifiers, Geolocation Data, Inferred Data</td><td id="=\@A" class="">Consent</td></tr><tr id="eb1b2699-ab9b-4169-9d86-3145e73587c4"><td id="|=il" class="">So we can train our advertising models</td><td id="TWES" class="">Account Creation Data, Content Data, Connection and Technical Data, Interaction Data, Device and Equipment Data, Mobile advertising IDs and device identifiers, Geolocation Data, Inferred Data</td><td id="=\@A" class="">Consent</td></tr><tr id="11b5dd3f-122d-4f8a-9f6e-a93689fcb112"><td id="|=il" class="">So we can recognize you across several devices</td><td id="TWES" class="">Connection and Technical Data</td><td id="=\@A" class="">Our legitimate interest to ensure that you are the one connecting to your account</td></tr><tr id="46abf68d-8bda-4d44-be71-43dbe263d284"><td id="|=il" class="">So we can serve advertising tailored to the preference and interests of our users (i.e.: select the most relevant advertising for you, display advertising on our App, our website or on third parties websites or apps and to measure advertising performance)</td><td id="TWES" class="">Connection and Technical Data, Inferred Data, Mobile advertising IDs and device identifiers</td><td id="=\@A" class="">Consent, where required by applicable laws. Legitimate interest, in countries where consent is not required</td></tr><tr id="aad3afd8-0776-4930-b984-d2c58934c6ab"><td id="|=il" class="">So we can measure our App’s and website’s effectiveness, the performance of the App (e.g., crashes and causes of crashes) or our website, and its stability, your usage for recommendations of both accounts and Content.</td><td id="TWES" class="">Usage Data, Connection and Technical Data, Device and Equipment Data, Mobile advertising IDs and device identifiers, Geolocation Data, Interaction Data, Inferred information</td><td id="=\@A" class="">Our legitimate interest to provide you with a functional app or website that meets your expectations.</td></tr><tr id="758cdff3-b683-4c61-9f82-78fcd85a5ecb"><td id="|=il" class="">So we can choose and publish Content on Syly’s discovery feed</td><td id="TWES" class="">Content Data, Interaction Data</td><td id="=\@A" class="">Our legitimate interest to provide a public feed (but you can choose each time you post whether you want your post to be visible on the public feed or not)</td></tr><tr id="0c339ed5-bc1e-4029-9ddb-2f01fe79f2d1"><td id="|=il" class="">So we can carry out surveys and get your feedback for research or product testing purposes</td><td id="TWES" class="">Communications with Syly</td><td id="=\@A" class="">Our legitimate interest to make our app better (but you can choose each time if you want to participate in a survey or not)</td></tr><tr id="6157a118-ed56-4c57-b35c-aacf515ed545"><td id="|=il" class="">So we can reach your parents or legal guardian if you are under 16 years old</td><td id="TWES" class="">Account Creation Data</td><td id="=\@A" class="">Our legal obligation to obtain parental consent</td></tr><tr id="acf27de3-47d9-46c2-a7a8-157dd64cf72e"><td id="|=il" class="">So we can ensure your and other users safety and security, the security of our App or website, our partners, and compliance with relevant laws and regulations</td><td id="TWES" class="">Content Data, Chat Data, Communications with Syly, Usage Data, Device and Equipment Data</td><td id="=\@A" class="">Our legitimate interest to provide a safe and secure environment to our users according to our Terms of Use</td></tr><tr id="bdbaf648-cb85-4ca9-83b7-1baa1640269d"><td id="|=il" class="">So we can answer to requests from national authorities</td><td id="TWES" class="">Account Creation Data, Content Data, Connection and Technical Data, Interaction Data, Device and Equipment Data, Mobile advertising IDs and device identifiers, Geolocation Data</td><td id="=\@A" class="">Our legal obligationsIf there is no direct legal obligations, our legitimate interest to cooperate with national authorities</td></tr><tr id="3a795c4f-df07-4ffe-afd1-d1bf02cce03b"><td id="|=il" class="">So we can defend and assert our rights before the authorities (civil, criminal or administrative)</td><td id="TWES" class="">All categories of data</td><td id="=\@A" class="">Our legitimate interest in asserting and defending our rights</td></tr></tbody></table><h3 id="76b4cc44-0d4f-47e5-9260-fb3053196593" class="">3. When we share information about you</h3><p id="d35c4210-962e-4dc6-a85d-1f12fb710e55" class="">3.1 We share information about you with our employees and service providers, who will process it under our control.</p><p id="95222a9b-84f7-446c-91b8-11c16b7b9cff" class=""><strong>Syly Employees:</strong> To allow you to use the App to you or provide you support, authorized Syly employees may need to get access to your information. We strictly limit who can access your data.</p><p id="52024333-8164-4f05-a7a9-4ab63800a8d4" class=""><strong>Service Providers:</strong> To bring you our App we work with a small group of partners who provide us services. This includes partners who help with technical and hosting support, sending notifications, publishing, and sharing content, user analytics and satisfaction surveys, management of security incidents or fraudulent activity, etc. In working with those partners, we may share your information with them to bring you our App.</p><p id="a494c217-1941-4299-b9bf-44f9f587f3f6" class=""><strong>Counsels</strong>: For compliance with our statutory obligations, in particular in terms of accounting, auditing and internal control, we wight share your information with our counsels (legal, financial, audit).</p><p id="75c1b854-935f-4e5a-95a0-0f7b6fe69bee" class="">3.2 We also share information about you to third parties, who will process it under their own control.</p><p id="f7586394-cfa7-4012-9567-66b52579e8e6" class=""><strong>Partner Integrations</strong>: Where we partner to bring you a feature we may need to share your information with the partner to integrate the feature into our App.</p><p id="a91e1e98-5685-4caf-9c51-0a19eb507b4a" class=""><strong>Legal and Statutory Purposes:</strong> From time to time we may receive legal requests for information related to our users, be required to proactively share data with authorities (governmental authorities, courts, and similar third parties) when we learn of certain Content on our App (e.g., Child Sexual Abuse Material or terrorism), address fraud or security concerns, or protect people on our App or elsewhere from harm.</p><p id="56d1586e-d4ab-4554-a438-8241a837f427" class=""><strong>Change in Ownership:</strong> In the event of a merger, acquisition, reorganization or sale of assets, or bankruptcy, Syly may share, sell or transfer information about you. This Privacy Policy would apply to all transferred information.</p><h3 id="b62e8d15-1dff-430c-a424-8c42e4a67b09" class="">4. Children’s data</h3><p id="e770316f-7607-450d-a24b-750ec7cc0b8a" class="">Syly never knowingly or willingly collects any personal data concerning children under 13 years of age. Depending on where you live, if you are under the age of consent in your country, a parent or guardian may also have to provide consent for you to use our App. If you are under 13, please do not use Syly.</p><h3 id="ca6ae34a-953c-417a-aeae-1493b216b260" class="">5. International transfers</h3><p id="52fd7df0-6624-4bbf-8e96-20f5c35826a6" class="">Some of the partners and service providers referred to in this policy are located outside of the European Union.</p><p id="ad58383d-5d40-4319-80b0-efd5a2a0a565" class="">In such case, we ensure that:</p><p id="40ef3f2c-e106-4c98-b7fe-d66e5a91c64e" class="">●     The personal data is transferred to countries recognized as offering an equivalent level of protection or,</p><p id="88f1ef26-37bc-4eda-9c39-fb9202a7c404" class="">●     One of the mechanisms offering appropriate guarantees is implemented (for example, the adoption of the standard contractual clauses of the European Commission.</p><h3 id="d14c421d-06b1-4a03-80da-ff4425808f35" class="">6. How long we keep information about you</h3><p id="f51e194d-2af4-4ccc-abab-a0b307b6a36a" class="">We keep your information only for as long as it’s needed to provide our services to you, in line with legal requirements and data protection authorities guidelines.</p><h3 id="931a01bb-016d-4b16-bfb7-39f786d9ea69" class="">7. What controls you have over your information in the App</h3><p id="30282096-d507-4566-954f-4ae8a5aea672" class="">At Syly we have implemented features to ensure that you remain in control of your personal data.</p><p id="1d0ebb79-bb68-4cae-b2ec-8a334032af89" class=""><strong>Notification:</strong> In the settings of the applications you can choose and control which notifications you receive about our App.</p><p id="4027d236-cd0a-4f05-b4b8-9c7d63643d43" class=""><strong>Block or Hide Users:</strong> To make sure you have a great experience when using our App, you can block or hide users who you do not want to receive Content from or who you do want to see your Content. If you block or hide a user, at any time you can go into the settings of the App and view who you have blocked or hidden. You can also unblock or unhide them at any time.</p><p id="fe27a626-4e0d-4d8c-a2cc-1a0b91c7ab01" class=""><strong>Who sees your Content</strong>: Note that when you share Content through our App, that Content is available to your Syly friends. Each time you share Content, you can also decide to allow friends of your friends to see it or even to publish it on Syly’s discovery feed. You can control this at any time in the settings of the applications how other users use your Content is not under our control.</p><p id="9ea34d1a-2ea8-49ab-af32-b6fe97ec5000" class=""><strong>Time Zone:</strong> When you create an account we determine your time zone for the purpose of providing you our App. In the settings of the applications you can change your time zone at any time.</p><p id="9f7ffbc0-0eb9-4ba8-984c-983f667188fd" class=""><strong>Integrations</strong>: From time to time we may offer integrations with partners to provide you certain features. If those partners require you to log into your account on their services to avail of the feature, you will be able to control those integrations in the settings of the applications at any time.</p><p id="c5499533-43ab-4fac-8f14-c6594ecee637" class=""><strong>Delete Your Account:</strong> In the settings of the App, you can choose to delete your account at any time. If you choose to delete your account, your account will be scheduled for deletion. This process takes approximately 15 days. If you log back into your account during that 15 day period, it will stop the deletion request. If you do not log back in, your account and all of your information will be permanently deleted. Note, information will not be deleted where Syly has received a valid legal request requiring us to preserve your information.</p><p id="2a6389f9-32a4-4039-8891-de2f818f2f02" class=""><strong>Consent:</strong> When we rely on your consent, you can withdraw your consent at any time from the “settings” page in our application.</p><p id="e90a66d2-9e87-42c7-b89c-50da1dde7bd2" class="">If your account is permanently suspended by us and you choose to delete your account, we will keep Account Creation Data related to your account to prevent permanently suspended users from creating new accounts.</p><p id="01123a23-b120-45e6-9094-0379f443258d" class="">
+</p><h3 id="a88de4be-4485-419c-97a7-4658d69be3d7" class="">8. What rights do you have over your information</h3><p id="34334eeb-95d2-4721-8f58-0a6f5fbb5ee2" class="">Privacy is a fundamental human right. That means every person that uses our App, irrespective of where they reside, can expect the same things from us. Whether you are in Europe, one of the 50 U.S. States, Latin America, the Middle East, Africa, Japan, Asia Pacific, or anywhere in between, you can:</p><p id="f51ee98e-5d0b-427c-a76f-f6009c912e41" class="">●     <span style="border-bottom:0.05em solid">Right to access and obtain a copy of your data:</span> you may request access to your personal data. If you request such access, we will provide you with all the information required by law, including the purposes of the processing, the categories of data processed, the categories of recipients, the data retention periods and your rights.</p><p id="68a4d82b-1162-4241-a4fa-467153229191" class="">●     <span style="border-bottom:0.05em solid">Right of rectification:</span> You may also ask us to rectify any personal data concerning you that is inaccurate and to complete any incomplete information.</p><p id="d0144f9e-dd08-4f48-a67c-aaec77d7b9b2" class="">●     <span style="border-bottom:0.05em solid">Right to erasure/deletion:</span> Under certain circumstances, you may request the erasure of your personal data. We may nevertheless need to retain certain limited data in an archived database, in particular if we have a legal obligation to retain such personal data or if it is necessary for the exercise or defense of legal claims.</p><p id="18add434-8c76-4d49-9771-74061fb644a4" class="">●     <span style="border-bottom:0.05em solid">Right to restrict processing:</span> In certain circumstances, you may request the limitation of the processing of your personal data, in particular when you request the rectification of your personal data.</p><p id="ca1a9737-dec3-4009-a929-fa7d7182dbce" class="">●     <span style="border-bottom:0.05em solid">Right to withdraw your consent:</span> Where the processing of your personal data is based on your consent, you may, at any time, withdraw any consent you have previously provided to us. Such withdrawal does not affect the lawfulness of processing based on consent prior to withdrawal.</p><p id="3a7cb50f-0e13-4972-8f5d-89b3bfa9c56c" class="">●     <span style="border-bottom:0.05em solid">Right to object:</span> You may also object at any time to the processing of your Personal Data when it is used for commercial prospecting purposes or for reasons related to your particular situation.</p><p id="efaefcc9-ba09-465f-b4af-ba458d94d653" class="">●     <span style="border-bottom:0.05em solid">Right to portability:</span> In certain cases, you may also obtain a copy of your personal data, in a commonly used and machine-readable format, to enable you to exercise your right to data portability.</p><p id="d9091576-2537-4ac4-ac1a-e2cfaec641b0" class="">●     <span style="border-bottom:0.05em solid">Right to set instructions for how your data is processed post-mortem:</span> If you are a French user, you also have the right to set directives concerning the management of your personal data after your death.</p><p id="c7805ecc-7472-4f85-af01-91ab234eff7b" class="">●     If you are in the European Union, EFTA States or the United Kingdom, and wish to raise a concern about our data processing practices, you have the right to do so with your local supervisory authority or Syly’s lead supervisory authority, the Commission Nationale de l’Informatique et des Libertés (CNIL), using the <a href="https://www.cnil.fr/en/contact-us">contact</a> <a href="https://www.cnil.fr/en/contact-us">details</a> <a href="https://www.cnil.fr/en/contact-us">listed</a> <a href="https://www.cnil.fr/en/contact-us">on</a> <a href="https://www.cnil.fr/en/contact-us">their</a> <a href="https://www.cnil.fr/en/contact-us">website</a>.</p><p id="3a3f0876-ea02-46f0-97ff-dec6ca0c4853" class="">Some of these rights (rectification, deletion and consent withdrawal) can be exercised directly from the App, in the setting section. You can also exercise these rights and all other rights by addressing your request to our support at hi@syly.app. Since we don’t necessarily collect your address email, we sometimes will need additional information to make sure that the request does come from you.</p><h3 id="54ee8b9c-7f25-4e1c-8eb5-fb85b73391c2" class="">9. U.S. Privacy Rights</h3><p id="1c7d4797-a0c0-4019-abf2-0ef6304983ef" class="">This U.S. Privacy Rights section supplements the information contained in our Privacy Policy and applies to all users, visitors and others who reside in the United States. We adopt this notice to comply with various federal and state privacy regulations, including but not limited to the California Consumer Privacy Act (CCPA), the California Privacy Rights Act (CPRA), the Colorado Privacy Act (CPA), the Connecticut Data Privacy Act (CTDPA), the Florida Privacy Protection Act (FPPA), the Iowa Consumer Data Protection Act (ICDPA), the Montana Consumer Data Privacy Act (MCDPA), the New Hampshire Consumer Privacy Act (NHCPA), the New Jersey Personal Information and Privacy Protection Act (NJPIPPA), the Oregon Consumer Privacy Act (OCPA), the Utah Consumer Privacy Act (UCPA), the Texas Data Privacy and Security Act (TDPSA), the Virginia Consumer Data Protection Act (VCDPA), the U.S. Federal Trade Commission Act (FTC Act), and other applicable laws.</p><h3 id="d69b709c-90a7-4bb6-a3cd-e42b26d43535" class="">Information We Collect</h3><p id="545b9586-9a16-409a-9950-05b7ff31723b" class="">We collect information that identifies, relates to, describes, references, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or device (“personal information”). </p><h3 id="ac028eb4-22e3-456b-b828-ed3a86851db1" class="">Use of Personal Information</h3><p id="a17cdb88-cf32-44b6-989a-067ce4f38e40" class="">We may use or disclose the personal information we collect for one or more of the business or commercial purposes described in the section of our privacy policy <em>“How we use information we receive about you”.</em></p><h3 id="9367b720-011d-482c-9590-319f8719b99b" class="">Data Retention</h3><p id="f76488a3-ca9f-4192-99b6-2bc400a254ff" class="">We will retain personal Information from or about you as reasonably necessary and proportionate to achieve the purpose(s) for which the personal Information was collected or processed unless a longer retention period is required or allowed by law.</p><h3 id="28dc0c5d-3de3-42f5-9cb5-6fe7946a104e" class="">Sharing Personal Information</h3><p id="bb29f0d7-59d8-49ed-8955-d143bcf909bf" class="">We may share your personal information with third parties for business purposes, including:</p><p id="0feb14bd-328b-49f8-8127-201c7a2c0689" class="">●     <strong>Data Analytics Providers</strong>: To understand app and website usage patterns and improve our services.</p><p id="4ab97599-1a63-4b8a-8f88-5c66e8e32776" class="">In the past twelve (12) months, we have disclosed the following categories of personal information for business purposes:</p><p id="381174ba-7ca5-43f3-b851-1cb9546acb45" class="">●     <strong>Identifiers</strong> such as IP address, online and device identifiers.</p><p id="d02d1579-fb64-44b2-81b1-8e83cdad259c" class="">●     <strong>Internet or Other Electronic Network Activity Information</strong> such as activities, browsing history and interactions with our app and website.</p><p id="110f692a-70c3-4c87-bb19-5845bed6716e" class="">Please note that we do not sell personal information as traditionally understood. However, under certain state laws such as the CCPA/CPRA, and potentially others including CPA, CTDPA, FPPA, ICDPA, MCDPA, NHCPA, NJPIPPA, OCPA, UCPA, TDPSA, and VCDPA, some data-sharing activities, particularly those involving cookies and similar technologies, may be considered a “sale” or “share” of personal information.</p><h3 id="7c75a464-9491-4fd7-a136-3afea4393909" class="">Your Rights and Choices</h3><p id="f46258e6-43f6-4380-bf50-95eaab4ccea8" class="">As a U.S. resident, you have specific rights regarding your personal information under federal and state laws, including the CCPA, CPRA, CPA, CTDPA, FPPA, ICDPA, MCDPA, NHCPA, NJPIPPA, OCPA, UCPA, TDPSA, VCDPA, and FTC Act. These rights include:</p><h3 id="4a99004b-285e-4dae-8ccf-a5b843c2ade3" class="">1. Right to Know</h3><p id="d36b3d6a-e33c-47d0-8d5e-58fd314e44ab" class="">You have the right to request that we disclose certain information to you about our collection and use of your personal information over the past twelve (12) months. Once we receive and verify your request, we will disclose to you:</p><p id="e5bffaf9-aacb-4fdb-9b32-21e3d773d7ee" class="">●     The categories of personal information we have collected about you.</p><p id="537a7c13-137c-4aba-939d-cc766d310cfc" class="">●     The categories of sources from which your personal information was collected.</p><p id="7c9aad5e-596f-4c4d-9b1c-f7cbbd1246f2" class="">●     The business or commercial purpose for collecting or selling your personal information.</p><p id="7e06bc3e-f9f4-4635-afef-9dba2b20f2d5" class="">●     The categories of third parties with whom we share your personal information.</p><p id="c91e22b9-c089-4ded-ad19-06e5a6da586b" class="">●     The specific pieces of personal information we have collected about you.</p><h3 id="bb52e76e-b1c7-4aa7-a747-6565e2b671a2" class="">2. Right to Delete</h3><p id="b67814c2-df82-4147-a576-88377f38e24f" class="">You have the right to request that we delete any of your personal information that we collected from you and retained, subject to certain exceptions. Once we receive and verify your request, we will delete your personal information from our records, unless an exception applies.</p><h3 id="46a57ddf-ec7b-4500-b00f-34897cf8c285" class="">3. Right to Opt-Out of the Sale and share of Personal Information</h3><p id="10ee44ec-c80b-4502-be60-ca2b5f4dd5cb" class="">You have the right to opt-out of the sale and share of your personal information. If you wish to exercise this right, please contact us using the information provided below.</p><p id="9f16dc7c-3392-468f-a7c6-5202dbc1ea59" class="">You can also click here.</p><p id="f805e822-d63b-4c25-96e1-e5b0473aed64" class="">You may also use a Global Privacy Control (GPC) signal, which is a mechanism supported by certain browsers or browser extensions that communicate your privacy preferences. When we detect such a signal, we will treat it as a valid opt-out request for the device or browser you are using.</p><h3 id="35c918e2-d251-4577-a246-287b764ed5f6" class="">4. Right to Non-Discrimination</h3><p id="eef2976e-ba33-4499-b6e2-3e205aab40c1" class="">You have the right not to receive discriminatory treatment for exercising your CCPA rights. We will not discriminate against you for exercising any of your CCPA rights.</p><h3 id="d5e113be-8b12-4ac8-8942-43977a13bb16" class="">Exercising Your Rights</h3><p id="66908d21-a585-4016-9030-d1b1a84e9668" class="">To exercise the rights described above, please submit a verifiable consumer request to us by either:</p><p id="20ea719e-43e9-402f-a764-e5dd65c5d141" class="">●     Contact our Data protection office here: hi@syly.app</p><p id="9c8e8613-67c2-4a9d-b5f7-6cd96e2e7bd4" class="">Only you, or a person registered with the California Secretary of State that you authorize to act on your behalf, may make a verifiable consumer request related to your personal information.</p><p id="bbedaf78-2831-4714-8fb4-ab6690ea8076" class="">The verifiable consumer request must provide sufficient information that allows us to reasonably verify that you are the person about whom we collected personal information or an authorized representative.</p><p id="5f761289-64d2-4500-b210-9eb931b7e0c0" class="">You may make a verifiable consumer request for access or deletion no more than twice within a 12-month period. The request must:</p><p id="29966638-faf9-4dec-831a-a64d0b1289ec" class="">●     <strong>Include sufficient information</strong>: Details that allow us to verify your identity and your request. This may include providing us with specific information we already have on record.</p><p id="fdcea463-9804-40f9-af35-db2ad9b06eba" class="">●     <strong>Describe your request with enough detail</strong>: So that we can properly understand, evaluate, and respond to it.</p><p id="ea503a63-bbab-4d92-8c7c-d5c2c7babe91" class="">We will respond to your request within 45 days (up to 15 days in case of data sharing) of its receipt. If we require more time (up to an additional 45 days), we will inform you of the reason and extension period in writing.</p><h3 id="ced63a86-4a38-4386-b7bd-182df7286b94" class="">Response Format and Delivery</h3><p id="13d8fac5-423f-47d6-a767-64363f4abe7c" class="">We will deliver our written response by mail or electronically, at your option. If we cannot comply with a request, we will explain the reasons in our response.</p><p id="faa9b41f-02c3-4421-bd95-4ffad3acbdae" class="">For data access requests, our response will cover only the 12-month period preceding the verifiable consumer request’s receipt. The response will explain the reasons we cannot comply with a request if applicable. For data portability requests, we will select a format to provide your personal information that is readily usable and should allow you to transmit the information from one entity to another entity without hindrance.</p><h3 id="d7a464bb-e4f7-4864-9986-ef3ce153297a" class="">Contact Information</h3><p id="2b469491-a063-48ee-a461-fe77cc943142" class="">If you have any questions or comments about this notice, the ways in which we collect and use your information described here and in our Privacy Policy, your choices and rights regarding such use, or wish to exercise your rights under California law, please do not hesitate to contact us at hi@syly.app.</p><p id="1b565d4c-e484-805b-bb5e-f32b0a29ac87" class="">
+</p><h3 id="962fe9e1-4de7-4e83-985f-47cf1d21c5ed" class=""><strong>Data protection provisions about the application and use of PostHog</strong></h3><p id="6d1c5b28-abc5-4399-9bb3-d4c926805746" class="">Syly is a reaction chat app that uses PostHog for analytics. PostHog is a web analytics service that helps us understand how users interact with our app. Web analytics involves the collection, gathering, and analysis of data about user behavior, such as which features are used, how often interactions occur, and how users navigate through the app. This data is used primarily to improve the user experience and optimize the app’s performance.</p><p id="c061a73e-8e5a-4eb8-b309-e95f33f95431" class="">The operator of the PostHog component is PostHog Inc., 2261 Market Street #4008, San Francisco, CA 94114, United States. However, Syly uses PostHog’s EU-based hosting to ensure data is processed within the European Union.</p><p id="eb791141-6bd7-4ec2-9eff-3082e4c5dc0f" class="">The purpose of integrating PostHog into Syly is to analyze app usage patterns. PostHog uses the collected data to evaluate how users engage with the app, generate reports on user activity, and provide insights that help us enhance our features and functionality.</p><p id="a6577a76-02cf-4dd7-b671-6de5eb364438" class="">PostHog may place a cookie or use other tracking technologies within the Syly app to analyze user interactions. With each session in the app, PostHog may automatically collect data such as the IP address, device type, usage frequency, and user interactions within the app. This helps us understand how Syly is used and identify areas for improvement.</p><p id="db47f170-090b-48cc-9b4f-6bfa6cab4b82" class="">The collected data, including the IP address of the data subject, may be processed and stored within the EU. PostHog does not sell user data and only shares it when necessary for service functionality.</p><p id="4ba3a76b-00bb-4b7d-a2e8-1d468bacfdd2" class="">Users may prevent data collection by adjusting their device settings, disabling tracking where possible, or utilizing available opt-out mechanisms provided by PostHog.</p><p id="c3318a8d-e084-45bb-a811-9ebc9f5adc03" class="">Further information and the applicable data protection provisions of PostHog may be retrieved under <a href="https://posthog.com/privacy">https://posthog.com/privacy</a>.</p><h3 id="e089039e-5fbd-40e5-8698-2675a9983dc8" class="">Children</h3><p id="6ba9fec1-6893-4d3d-8924-bc2bc6f2fe22" class="">Our website and our App are not intended for use by children under the age of 13, and we do not knowingly collect personal information from children under this age.</p><h3 id="6fa4f8f9-b7f6-478b-8b5d-97fc293cb6da" class=""><strong>Do Not Track (DNT):</strong></h3><p id="5411270a-b81c-4e85-9896-c245dcebfdb5" class="">Some browsers offer a “Do Not Track” (DNT) setting that allows you to express a preference not to be tracked by websites. However, there is no universally accepted standard for how DNT signals should be interpreted. As a result, our website does not currently respond to DNT signals. Instead, we focus on compliance with recognized privacy preferences, such as the Global Privacy Control (GPC).</p><h3 id="d2373f3c-c472-4654-bb02-042a991336fe" class="">10. Contact</h3><p id="1b0daca8-7065-4eb2-a984-1efed10a50a5" class="">Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:</p><p id="1b565d4c-e484-8042-9c74-e50eaf539966" class="">Syly App</p><p id="1b565d4c-e484-8054-8796-fd82acb5d77a" class="">Paul-Ehrlich-Str. 21</p><p id="1b565d4c-e484-80c9-968c-e80d91ea7e74" class="">51643 Gummersbach</p><p id="1b565d4c-e484-8047-993e-de3e833d4660" class="">Deutschland</p><p id="1b565d4c-e484-80c2-a00e-f5e01bf502b0" class="">Phone: 015170128847</p><p id="1b565d4c-e484-80ba-9858-c1c4e5630543" class="">Email: hi@syly.app</p><p id="1b565d4c-e484-8089-98f8-fd529601bb7e" class="">Website: www.syly.app</p><h3 id="e0c9b7ad-e175-4ba8-81c0-5ff9802b6998" class="">11. Update of our Privacy Policy</h3><p id="006f1c84-ec41-4be7-8b0e-30e67b0f14b0" class="">We can update our Privacy Policy if this is necessary or if the law requires it.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

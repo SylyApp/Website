@@ -126,7 +126,7 @@ function MainComponent() {
       <div className="w-full flex justify-end pb-4">
         <div className="flex gap-6">
           <a
-            href="https://judicious-price-84b.notion.site/dataatsyly"
+            href="/privacy-policy.html"
             className="text-white/20 hover:text-white/40 text-sm transition-colors duration-300"
             target="_blank" 
           >
