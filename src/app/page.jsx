@@ -126,14 +126,14 @@ function MainComponent() {
       <div className="w-full flex justify-end pb-4">
         <div className="flex gap-6">
           <a
-            href="/Privacy-Policy.html"
+            href="https://syly.notion.site/privacy-policy"
             className="text-white/20 hover:text-white/40 text-sm transition-colors duration-300"
             target="_blank" 
           >
-            Privacy
+            Privacy Policy
           </a>
           <a
-            href="https://judicious-price-84b.notion.site/syly-About-Site-483304a1b6ca4025810f907d0e83f3e3"
+            href="https://syly.notion.site/privacy-policy"
             className="text-white/20 hover:text-white/40 text-sm transition-colors duration-300"
             target="_blank" 
           >
