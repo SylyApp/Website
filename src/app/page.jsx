@@ -11,6 +11,9 @@ function MainComponent() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
+  // Hier kannst du den Zustand für die Verfügbarkeit der App setzen
+  const openForNewUsers = true; 
+
   // useEffect(() => {
   //   // Sicherstellen, dass PostHog nur im Browser initialisiert wird
   //   if (typeof window !== "undefined") {
@@ -21,15 +24,17 @@ function MainComponent() {
   const handleClick = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-    if (/android/i.test(userAgent)) {
+    if (/android/i.test(userAgent) && openForNewUsers) {
       window.open("https://play.google.com/store/apps/details?id=deine.android.app", "_blank");
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      posthog.capture("click_to_download", { button: "Click to Download Button", platform: "Android" });
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream && openForNewUsers) {
      window.open("https://apps.apple.com/deine-ios-app", "_blank");
+     posthog.capture("click_to_download", { button: "Click to Download Button", platform: "IOS" });
     } else {
     // Fallback: z. B. auf Landing Page oder Waitlist
     window.open("https://getwaitlist.com/waitlist/25243", "_blank");
+    posthog.capture("click_to_download", { button: "Click to Download Button", platform: "ElseOrClosedForNewUsers" });
     }
-    posthog.capture("click_to_download", { button: "Click to Download Button" }); // Event senden
   };
   useEffect(() => {
     const video = videoRef.current;
@@ -73,7 +78,7 @@ function MainComponent() {
               onClick={handleClick} 
             >
               <a
-                href="https://getwaitlist.com/waitlist/25243"
+                //href="https://getwaitlist.com/waitlist/25243"
                 className="bg-[#FFDF60] text-black font-inter px-10 py-5 rounded-full text-xl font-bold"
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -122,7 +127,7 @@ function MainComponent() {
             onClick={handleClick} 
           >
             <a
-              href="https://getwaitlist.com/waitlist/25243"
+              //href="https://getwaitlist.com/waitlist/25243"
               className="bg-[#FFDF60] text-black font-inter px-10 py-5 rounded-full text-xl font-bold"
               target="_blank" 
               rel="noopener noreferrer" 
