@@ -64,9 +64,10 @@ function MainComponent() {
             <h1 className="font-inter text-6xl md:text-[150px] text-white tracking-[-0.1em] lowercase font-black mb-4">
               SYLY
             </h1>
-            <p className="text-white/80 text-lg md:text-xl font-inter text-center">
+            <p className="text-white/80 text-2xl md:text-3xl font-inter text-center">
               reactions 🤣 from friends 🙌 on memes
             </p>
+
           </div>
           <div className="hidden md:block">
             <button
@@ -90,32 +91,24 @@ function MainComponent() {
         </div>
 
         <div className="order-2 md:w-1/2 flex items-center justify-center">
-          <div
-            className={`relative w-[300px] h-[600px] bg-black rounded-[50px] border-4 border-[#333] flex items-center justify-center shadow-glow`}
-          >
-            <div className="absolute top-0 w-[120px] h-[25px] bg-black rounded-b-[12px]">
-              <div className="absolute left-[50%] top-[6px] transform translate-x-[-50%] w-[60px] h-[6px] bg-[#333] rounded-full flex items-center justify-between px-1">
-                <div className="w-[8px] h-[8px] rounded-full bg-[#222]"></div>
-                <div className="w-[10px] h-[4px] rounded-full bg-[#222]"></div>
-              </div>
-            </div>
-            <div className="absolute right-[-4px] top-[120px] h-[30px] w-[4px] bg-[#333] rounded-l-lg"></div>
-            <div className="absolute right-[-4px] top-[170px] h-[60px] w-[4px] bg-[#333] rounded-l-lg"></div>
-            <div className="absolute right-[-4px] top-[250px] h-[60px] w-[4px] bg-[#333] rounded-l-lg"></div>
-            <div className="absolute left-[-4px] top-[170px] h-[100px] w-[4px] bg-[#333] rounded-r-lg"></div>
-            <video
-              ref={videoRef}
-              className="w-[280px] h-[560px] object-cover rounded-[40px]"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="website_video.mp4" type="video/mp4" />
-            </video>
-            <canvas ref={canvasRef} width="1" height="1" className="hidden" />
-          </div>
-        </div>
+  <div
+    className={`relative w-[290px] h-[570px] bg-[rgba(0,0,0,0.5)] rounded-[40px] flex items-center justify-center shadow-glow`}
+  >
+    <video
+      ref={videoRef}
+      className="w-[280px] h-[560px] object-cover rounded-[40px]"
+      autoPlay
+      loop
+      muted
+      playsInline
+    >
+      <source src="website_video.mp4" type="video/mp4" />
+    </video>
+    <canvas ref={canvasRef} width="1" height="1" className="hidden" />
+  </div>
+</div>
+
+
 
         <div className="order-3 md:hidden w-full flex justify-center mt-10 mb-8">
           <button
