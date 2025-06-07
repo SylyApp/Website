@@ -25,10 +25,10 @@ function MainComponent() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/android/i.test(userAgent) && openForNewUsers) {
-      window.open("https://play.google.com/store/apps/details?id=deine.android.app", "_blank");
+      window.open("https://getwaitlist.com/waitlist/25243", "_blank");
       posthog.capture("click_to_download", { button: "Click to Download Button", platform: "Android" });
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream && openForNewUsers) {
-     window.open("https://apps.apple.com/deine-ios-app", "_blank");
+     window.open("https://apps.apple.com/de/app/syly/id6618152144", "_blank");
      posthog.capture("click_to_download", { button: "Click to Download Button", platform: "IOS" });
     } else {
     // Fallback: z. B. auf Landing Page oder Waitlist
