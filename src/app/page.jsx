@@ -69,25 +69,35 @@ function MainComponent() {
             </p>
 
           </div>
-          <div>
-            <button
-              className={`transform transition-all duration-300 ease-in-out ${
-                isHovered ? "scale-110" : "scale-100"
-              }`}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-              onClick={handleClick} 
-            >
-              <a
-                //href="https://getwaitlist.com/waitlist/25243"
-                className="bg-[#FFDF60] text-black font-inter px-10 py-5 rounded-full text-xl font-bold"
-                target="_blank" 
-                rel="noopener noreferrer" 
-              >
-                Click to Download
-              </a>
-            </button>
-          </div>
+          <div className="flex flex-col items-center">
+          <div className="flex gap-4 mb-4">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+    alt="App Store"
+    className="h-11 w-auto"
+    onClick={handleClick}
+  />
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+    alt="Google Play"
+    className="h-11 w-auto"
+    onClick={handleClick}
+  />
+</div>
+
+
+  {/* Der Button darunter */}
+  <button
+    className={`transform transition-all duration-300 ease-in-out ${
+      isHovered ? "scale-110" : "scale-100"
+    } bg-[#FFDF60] text-black font-inter px-10 py-4 rounded-full text-xl font-bold`}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+    onClick={handleClick}
+  >
+    Get The App
+  </button>
+</div>
         </div>
 
         <div className="order-2 md:w-1/2 flex items-center justify-center">
