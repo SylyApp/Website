@@ -69,7 +69,7 @@ function MainComponent() {
             </p>
 
           </div>
-          <div className="hidden md:block">
+          <div>
             <button
               className={`transform transition-all duration-300 ease-in-out ${
                 isHovered ? "scale-110" : "scale-100"
@@ -110,7 +110,7 @@ function MainComponent() {
 
 
 
-        <div className="order-3 md:hidden w-full flex justify-center mt-10 mb-8">
+        <div className="order-3 md:hidden w-full flex justify-center mt-10 mb-8 hidden md:block">
           <button
             className={`transform transition-all duration-300 ease-in-out ${
               isHovered ? "scale-110" : "scale-100"
