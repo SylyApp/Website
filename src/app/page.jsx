@@ -11,10 +11,16 @@ function MainComponent() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [isPulsing, setIsPulsing] = useState(true);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsPulsing(false), 600); // gleiche Dauer wie Animation
-    return () => clearTimeout(timer);
+    // Animation starten, sobald die Komponente gemountet ist
+    const timer = setTimeout(() => setIsLoaded(true), 100); // kleiner Delay für nice Effekt
+    const pulseTimer = setTimeout(() => setIsPulsing(false), 600);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(pulseTimer);
+    };
   }, []);
 
 
@@ -68,31 +74,45 @@ function MainComponent() {
   return (
     <div className="min-h-screen w-full bg-black flex flex-col px-4 md:px-20 overflow-y-auto md:overflow-hidden">
       <div className="flex-1 flex flex-col md:flex-row items-center justify-between py-8 md:py-0 gap-8 md:gap-0">
-        <div className="order-1 md:w-1/2 flex flex-col items-center justify-center">
-          <div className="text-center mb-8 md:mb-12">
+        <div className={`order-1 md:w-1/2 flex flex-col items-center justify-center`}>
+          <div className="text-center mb-8 md:mb-4">
             <h1 className="font-inter text-6xl md:text-[150px] text-white tracking-[-0.1em] lowercase font-black mb-4">
               SYLY
             </h1>
             <p className="text-white/80 text-2xl md:text-3xl font-inter text-center">
               reactions 🤣 from friends 🙌 on memes
             </p>
-
           </div>
           <div className="flex flex-col items-center">
-          <div className="flex gap-4 mb-4">
   <img
-    src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-    alt="App Store"
-    className="h-11 w-auto"
-    onClick={handleClick}
+    src="/qr-code.svg"
+    alt="QR Code"
+    className={`hidden md:block w-36 h-36 transform transition-all duration-300 ease-in-out ${
+      isHovered ? "scale-120" : "scale-100"
+    } ${isPulsing ? "animate-scale-pulse" : ""}`}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
   />
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-    alt="Google Play"
-    className="h-11 w-auto"
-    onClick={handleClick}
-  />
-</div>
+<p className="hidden md:block text-white/80 text-sm md:text-base font-inter text-center mt-2 mb-8">
+  scan to download
+</p>
+
+
+  {/* App Store Badges */}
+  <div className="flex gap-4 mb-4">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+      alt="App Store"
+      className="h-11 w-auto"
+      onClick={handleClick}
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+      alt="Google Play"
+      className="h-11 w-auto"
+      onClick={handleClick}
+    />
+  </div>
 
 
   {/* Der Button darunter */}
@@ -106,16 +126,6 @@ function MainComponent() {
   >
     Get The App
   </button>
-  {/* QR-Code: nur auf mittelgroßen Bildschirmen und größer sichtbar */}
-  <img
-      src="/qr-code.svg"
-      alt="QR Code"
-      className={`hidden md:block w-36 h-36 mt-4 transform transition-all duration-300 ease-in-out ${
-        isHovered ? "scale-110" : "scale-100"
-      } ${isPulsing ? "animate-scale-pulse" : ""}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    />
 </div>
         </div>
 
