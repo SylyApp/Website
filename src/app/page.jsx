@@ -93,7 +93,7 @@ function MainComponent() {
     onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
   />
-<p className="hidden md:block text-white/80 text-sm md:text-base font-inter text-center mt-2 mb-8">
+<p className="hidden md:block text-white/80 text-sm md:text-base italic font-inter text-center mt-2 mb-8">
   scan to download
 </p>
 
