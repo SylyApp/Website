@@ -10,6 +10,13 @@ function MainComponent() {
   const [dominantColor, setDominantColor] = useState("255, 255, 255");
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
+  const [isPulsing, setIsPulsing] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsPulsing(false), 600); // gleiche Dauer wie Animation
+    return () => clearTimeout(timer);
+  }, []);
+
 
   // Hier kannst du den Zustand für die Verfügbarkeit der App setzen
   const openForNewUsers = true; 
@@ -56,6 +63,8 @@ function MainComponent() {
     return () => video.removeEventListener("loadeddata", analyzeFrame);
   }, []);
 
+  
+
   return (
     <div className="min-h-screen w-full bg-black flex flex-col px-4 md:px-20 overflow-y-auto md:overflow-hidden">
       <div className="flex-1 flex flex-col md:flex-row items-center justify-between py-8 md:py-0 gap-8 md:gap-0">
@@ -88,7 +97,7 @@ function MainComponent() {
 
   {/* Der Button darunter */}
   <button
-    className={`transform transition-all duration-300 ease-in-out ${
+    className={`block md:hidden transform transition-all duration-300 ease-in-out ${
       isHovered ? "scale-110" : "scale-100"
     } bg-[#FFDF60] text-black font-inter px-10 py-4 rounded-full text-xl font-bold`}
     onMouseEnter={() => setIsHovered(true)}
@@ -97,6 +106,16 @@ function MainComponent() {
   >
     Get The App
   </button>
+  {/* QR-Code: nur auf mittelgroßen Bildschirmen und größer sichtbar */}
+  <img
+      src="/qr-code.svg"
+      alt="QR Code"
+      className={`hidden md:block w-36 h-36 mt-4 transform transition-all duration-300 ease-in-out ${
+        isHovered ? "scale-110" : "scale-100"
+      } ${isPulsing ? "animate-scale-pulse" : ""}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    />
 </div>
         </div>
 
