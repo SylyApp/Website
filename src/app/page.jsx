@@ -7,6 +7,8 @@ import posthog from "posthog-js";
 
 function MainComponent() {
   const [isHovered, setIsHovered] = useState(false);
+  const [isHoveredAppStore, setIsHoveredAppStore] = useState(false);
+  const [isHoveredGooglePlay, setIsHoveredGooglePlay] = useState(false);
   const [dominantColor, setDominantColor] = useState("255, 255, 255");
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
@@ -100,19 +102,27 @@ function MainComponent() {
 
   {/* App Store Badges */}
   <div className="flex gap-4 mb-4">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-      alt="App Store"
-      className="h-11 w-auto"
-      onClick={handleClick}
-    />
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-      alt="Google Play"
-      className="h-11 w-auto"
-      onClick={handleClick}
-    />
-  </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+        alt="App Store"
+        className={`h-11 w-auto transform transition-transform ${
+          isHoveredAppStore ? "scale-110" : "scale-100"
+        }`}
+        onClick={handleClick}
+        onMouseEnter={() => setIsHoveredAppStore(true)}
+        onMouseLeave={() => setIsHoveredAppStore(false)}
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Google Play"
+        className={`h-11 w-auto transform transition-transform ${
+          isHoveredGooglePlay ? "scale-110" : "scale-100"
+        }`}
+        onClick={handleClick}
+        onMouseEnter={() => setIsHoveredGooglePlay(true)}
+        onMouseLeave={() => setIsHoveredGooglePlay(false)}
+      />
+    </div>
 
 
   {/* Der Button darunter */}
