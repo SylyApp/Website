@@ -87,7 +87,7 @@ function MainComponent() {
           </div>
           <div className="flex flex-col items-center">
   <img
-    src="/qr-code.svg"
+    src="/qr-code-apple.svg"
     alt="QR Code"
     className={`hidden md:block w-36 h-36 transform transition-all duration-300 ease-in-out ${
       isHovered ? "scale-120" : "scale-100"
